@@ -10,7 +10,8 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 # Initialize NLTK resources
-nltk.data.path.append(r'Add/your/own/path')  # Set the path to your nltk_data directory
+nltk.download('stopwords')
+nltk.download('punkt')
 
 # Initialize PRAW with your Reddit API credentials
 reddit = praw.Reddit(client_id='XXXXXXXXXXXX',
